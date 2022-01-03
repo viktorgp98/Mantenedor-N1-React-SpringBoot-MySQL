@@ -15,7 +15,7 @@ Para este proyecto utilicé el siguiente listado de extensiones para una mayor p
 Para iniciar la Base de Datos, se debe iniciar mediante el `Spring Boot Dashboard` disponible en Visual Studio Code.
 
 # Dependencias de React utilizadas
-Se utilizaron las siguientes dependencias para el correcto funcionamiento del proyecto
+Se utilizaron las siguientes dependencias para el correcto funcionamiento del proyecto, instalar todas antes de ejecutar la aplicacion
 
 1.  react-redux (`npm i react-redux`)
 2.  react scripts (`npm i react-scripts`)
