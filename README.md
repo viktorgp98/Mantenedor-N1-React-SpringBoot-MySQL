@@ -26,15 +26,12 @@ Se utilizaron las siguientes dependencias para el correcto funcionamiento del pr
 7.  bootstrap (`npm i bootstrap`)
 8.  reacstrap (`npm i reactstrap react react-dom`)
 
-## Available Scripts
-
-In the project directory, you can run:
+## Iniciar la aplicacion
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+La app se inicia en modo development.\
+[http://localhost:3000](http://localhost:3000) para ser visto en el navegador o [http://localhost:8081](http://localhost:8081)  .
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Cualquier duda o consulta contactarme por correo
 
