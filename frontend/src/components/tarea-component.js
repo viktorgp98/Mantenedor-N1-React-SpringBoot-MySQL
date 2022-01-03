@@ -25,8 +25,7 @@ class Tarea extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.match.params.id);
-    // this.getTarea(this.props.match.params.id);
+    this.getTarea();
   }
 
   onChangeFechaCreacion(e) {
@@ -190,7 +189,7 @@ class Tarea extends Component {
         ) : (
           <div>
             <br />
-            <p>Please click on a Tarea...</p>
+            <p>Selecciona un tarea...</p>
           </div>
         )}
       </div>
