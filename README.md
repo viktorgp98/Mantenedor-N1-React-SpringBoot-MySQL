@@ -1,70 +1,37 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Para desplejar el proyecto
+# Base de Datos #
+1. Descargar e instalar Docker (https://www.docker.com/get-started) para utilizar los recursos de MySQL. 
+2. Una vez instalado, abrir una nueva consola(en mi caso una consola dentro de Visual Studio Code) y posicionarse en la carpeta contenedora del proyecto.
+3. En la consola, comprobar que Docker esta instalado correctamente mediante el comando: `docker --version`
+4. Lo siguiente es crear un contenedor en el sistema mediante Docker (desde la consola) con el comando: `docker run --name mysqldb -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=aplicacionbd -d -p 3306:3306 mysql:latest`
+# Extensiones Visual Studio Code #
+Para este proyecto utilicé el siguiente listado de extensiones para una mayor productividad
+1. Java Extension Pack
+2. Spring Boot Extension Pack
+3. Lombok
 
-## Available Scripts
+# Iniciar Base de Datos
+Para iniciar la Base de Datos, se debe iniciar mediante el `Spring Boot Dashboard` disponible en Visual Studio Code.
 
-In the project directory, you can run:
+# Dependencias de React utilizadas
+Se utilizaron las siguientes dependencias para el correcto funcionamiento del proyecto
+
+1.  react-redux (`npm i react-redux`)
+2.  react scripts (`npm i react-scripts`)
+3.  redux  (`npm i redux`)
+4.  redux-thunk (`npm i redux-thunk`)
+5.  react-router-dom (`npm i react-router-dom`)
+6.  axios (`npm i axios`)
+7.  bootstrap (`npm i bootstrap`)
+8.  reacstrap (`npm i reactstrap react react-dom`)
+
+## Iniciar la aplicacion
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+La app se inicia en modo development.\
+[http://localhost:3000](http://localhost:3000) para ser visto en el navegador o [http://localhost:8081](http://localhost:8081)  .
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Cualquier duda o consulta contactarme por correo
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
