@@ -25,8 +25,14 @@ class Tarea extends Component {
   }
 
   componentDidMount() {
-    this.getTarea();
+    try{
+      this.getTarea(this.props.match.params.id)
+    }catch(e){
+      console.log(e);
+    }
   }
+
+   
 
   onChangeFechaCreacion(e) {
     const fechaCreacion = e.target.value;
@@ -156,14 +162,14 @@ class Tarea extends Component {
 
             {tareaActual.vigente ? (
               <button
-                className="badge badge-primary mr-2"
+                className="badge btn-primary mr-2"
                 onClick={() => this.modificarEstado(false)}
               >
                 Pendiente
               </button>
             ) : (
               <button
-                className="badge badge-primary mr-2"
+                className="badge btn-primary mr-2"
                 onClick={() => this.modificarEstado(true)}
               >
                 Terminada
@@ -171,7 +177,7 @@ class Tarea extends Component {
             )}
 
             <button
-              className="badge badge-danger mr-2"
+              className="badge btn-danger mr-2"
               onClick={this.borrarTarea}
             >
               Eliminar
@@ -179,7 +185,7 @@ class Tarea extends Component {
 
             <button
               type="submit"
-              className="badge badge-success"
+              className="badge btn-success"
               onClick={this.modificarContenido}
             >
               Guardar cambios

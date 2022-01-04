@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import { Container, Nav, Navbar, NavbarBrand,NavItem,NavLink } from 'reactstrap';
 import AddTarea from "./components/add-tarea-component";
 import Tarea from "./components/tarea-component";
@@ -28,27 +28,18 @@ class App extends Component {
         </Navbar>
         <Container className="container">
           <div className="container mt-3">
-            <Routes>
-              <Route exact path="/" element={<ListaTareas/>} />
-              <Route exact path="/add" element={<AddTarea/>} />
-              <Route path='/tareas/:id' render={
-                <Tarea
-                  {...this.props}
-                />
-              }
-              />
-              {/* <Route 
-                path="/tareas/:id" 
-                element={<Tarea/>}
-                computedMatch="this.props.computedMatch.params.id"
-              /> */}
-            </Routes>
+            <Switch>
+              <Route exact path={["/", "/tareas"]} component={ListaTareas} />
+              <Route exact path="/add" component={AddTarea} />
+              <Route path="/tareas/:id" component={Tarea} />
+            </Switch>
           </div>
         </Container>
       </Router>
     );
   };
 };
+
 
 
 
