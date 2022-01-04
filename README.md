@@ -21,7 +21,7 @@ Se utilizaron las siguientes dependencias para el correcto funcionamiento del pr
 2.  react scripts (`npm i react-scripts`)
 3.  redux  (`npm i redux`)
 4.  redux-thunk (`npm i redux-thunk`)
-5.  react-router-dom (`npm i react-router-dom`)
+5.  react-router-dom v5.2.0 (`npm i react-router-dom@5.2.0`)
 6.  axios (`npm i axios`)
 7.  bootstrap (`npm i bootstrap`)
 8.  reacstrap (`npm i reactstrap react react-dom`)
