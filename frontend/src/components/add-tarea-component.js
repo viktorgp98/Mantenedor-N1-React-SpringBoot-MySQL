@@ -72,7 +72,7 @@ class AddTarea extends Component {
 
   render() {
     return (
-        <div className="submit-form col-md-6 mt-4">
+        <div className="submit-form  mt-4">
         {this.state.enviado ? (
           <div>
             <h4>Agregado correctamente!</h4>
@@ -82,7 +82,7 @@ class AddTarea extends Component {
           </div>
         ) : (
           <div className="row g-3"> 
-            <div className="form-group col-md-6 ">
+            <div className="form-group  ">
               <label htmlFor="descripcion">Descripcion</label>
               <input
                 type="text"
@@ -95,7 +95,7 @@ class AddTarea extends Component {
               />
             </div>
 
-            <div className="form-group col-md-6">
+            <div className="form-group ">
               <label htmlFor="fechaCreacion">Fecha Actual</label>
               <input
                 type="datetime-local"

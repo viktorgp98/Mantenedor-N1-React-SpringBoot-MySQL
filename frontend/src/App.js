@@ -11,16 +11,16 @@ class App extends Component {
   render(){
     return(
       <Router>
-        <Navbar expand="md" color="danger" dark>
+        <Navbar expand="md" color="danger" dark container="md">
           <NavbarBrand>Mantenedor N°1</NavbarBrand>
           <Nav>
           <NavItem>
-            <NavLink href="/" className='navbar-light'>
+            <NavLink href="/" className='light'>
               Lista de tareas
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/add" className='navbar-light'>
+            <NavLink href="/add" className='light'>
               Agregar tarea
             </NavLink>
           </NavItem>

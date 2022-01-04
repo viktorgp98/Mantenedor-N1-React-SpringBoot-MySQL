@@ -130,8 +130,8 @@ class Tarea extends Component {
         {tareaActual ? (
           <div className="edit-form">
             <h4>Tarea</h4>
-            <form>
-              <div className="form-group">
+            <form className="mb-4">
+              <div className="form-group mt-4">
                 <label htmlFor="descripcion">Descripcion</label>
                 <input
                   type="text"
@@ -141,7 +141,7 @@ class Tarea extends Component {
                   onChange={this.onChangeDescripcion}
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group mt-2 mb-2">
                 <label htmlFor="fechaCreacion">Fecha Creación</label>
                 <input
                   type="datetime-local"
@@ -152,7 +152,7 @@ class Tarea extends Component {
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group mt-2 ">
                 <label>
                   <strong>Vigente:</strong>
                 </label>
@@ -162,14 +162,14 @@ class Tarea extends Component {
 
             {tareaActual.vigente ? (
               <button
-                className="badge btn-primary mr-2"
+                className="btn-sm btn-primary mr-3 "
                 onClick={() => this.modificarEstado(false)}
               >
                 Pendiente
               </button>
             ) : (
               <button
-                className="badge btn-primary mr-2"
+                className="btn-sm btn-primary mr-3"
                 onClick={() => this.modificarEstado(true)}
               >
                 Terminada
@@ -177,7 +177,7 @@ class Tarea extends Component {
             )}
 
             <button
-              className="badge btn-danger mr-2"
+              className="btn-sm btn-danger mr-3"
               onClick={this.borrarTarea}
             >
               Eliminar
@@ -185,7 +185,7 @@ class Tarea extends Component {
 
             <button
               type="submit"
-              className="badge btn-success"
+              className="btn-sm btn-success"
               onClick={this.modificarContenido}
             >
               Guardar cambios

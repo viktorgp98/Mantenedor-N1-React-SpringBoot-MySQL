@@ -52,3 +52,7 @@
   max-width: 300px;
   margin: auto;
 }
+
+.nav-link{
+  color: #fff !important;
+}

@@ -105,7 +105,7 @@ class ListaTareas extends Component {
 
               <Link
                 to={"/tareas/" + tareaActual.id}
-                className="badge btn-warning mt-2"
+                className="btn btn-sm btn-warning mt-2"
               >
                 Editar
               </Link>
